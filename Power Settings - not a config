@@ -1,0 +1,34 @@
+##add to printer.cfg
+
+## Power Controls
+
+[gcode_macro POWER_OFF_PRINTER]
+gcode:
+  {action_call_remote_method("set_device_power",
+                             device="wifi_switch",
+                             state="off")}
+
+#[delayed_gcode delayed_printer_off]
+#initial_duration: 0.
+#gcode:
+#  {% if printer.idle_timeout.state == "Idle" %}
+#    POWER_OFF_PRINTER
+#  {% endif %}
+
+#[idle_timeout]
+#gcode:
+#  TURN_OFF_MOTORS
+#  TURN_OFF_HEATERS
+#  UPDATE_DELAYED_GCODE ID=delayed_printer_off DURATION=60
+
+
+##add to moonraker.conf (tplink) install Kasa app and setup each outlet
+
+[power wifi_switch]
+type: tplink_smartplug
+off_when_shutdown: False
+locked_while_printing: False
+restart_klipper_when_powered: True
+restart_delay: 1.
+address:192.168.1.1
+port:9999
