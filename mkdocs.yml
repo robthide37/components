@@ -1,5 +1,5 @@
 site_name: components
-repo_url: https://github.com/robthide37/components
+repo_url: https://github.com/robthide37/components.git
 nav:
     - 'User Documentation':
         - Installation: installation.md
