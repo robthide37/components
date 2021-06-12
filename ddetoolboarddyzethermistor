@@ -1,0 +1,27 @@
+# klipper board use this 
+[extruder]
+step_pin: head0:PB3
+dir_pin: head0:PB4
+enable_pin: !head0:PB6
+heater_pin: head0:PA6  # "HEAT"
+rotation_distance :4.6715
+microsteps: 16
+nozzle_diameter: 0.800 # is only a limit leave at teh largest size nozzle you use 
+filament_diameter: 1.750
+sensor_type: dyze500
+sensor_pin: head0:PA0 # "THERMISTOR"
+pullup_resistor: 2200 # The board uses a 2.2k ohm pullup to work with a PT1000 
+min_temp: 0
+max_temp: 450
+max_extrude_only_distance: 151.0
+[tmc2209 extruder]
+uart_pin: head0:PA10
+tx_pin: head0:PA9
+interpolate: True
+run_current: 0.35
+sense_resistor: 0.110
+hold_current: 0.15
+stealthchop_threshold: 0
+driver_HEND: 3
+driver_HSTRT: 2
+driver_TOFF: 3
