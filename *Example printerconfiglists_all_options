@@ -24,10 +24,10 @@ serial: /tmp/klipper_host_mcu
 #[include components/400.cfg] 
 [include components/300a3dp,omc,optendstops.cfg]
 
-#[include ddestockthermistor]                                                        ######
-#[include ddedyzethermistor]
-#[include ddetoolboardstockthermistor]
-[include ddetoolboarddyzethermistor]
+#[include components/ddestockthermistor]                                                        ######
+#[include components/ddedyzethermistor]
+#[include components/ddetoolboardstockthermistor]
+[include components/ddetoolboarddyzethermistor]
 
 
 [include components/fansandleds.cfg]                                               #####
@@ -36,7 +36,7 @@ serial: /tmp/klipper_host_mcu
 
 [include components/inputshaper.cfg]
 
-[include timelapse.cfg]
+[include components/timelapse.cfg]
 
 
 #*# <---------------------- SAVE_CONFIG ---------------------->
