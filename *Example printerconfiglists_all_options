@@ -22,7 +22,7 @@ serial: /tmp/klipper_host_mcu
 
 [include components/300.cfg]  #choose your bed size and comment out the other      ######
 #[include components/400.cfg] 
-[include components/300omc_2A,9steppers.cfg]
+[include components/300a3dp,omc,optendstops.cfg]
 
 #[include ddestockthermistor]                                                        ######
 #[include ddedyzethermistor]
