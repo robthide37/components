@@ -2,7 +2,7 @@
 # 1. find you mcu id or pull from a previous printer.cfg. you can use the ls /dev/serial/by-id/* command to get it. 
 # 2. Enter the mcu id on the line below this replacing the example serial
 [mcu]
-serial: /dev/serial/by-id/usb-Klipper_sam4e8e_00313953324A46533133303432303038-if00
+serial: /dev/serial/by-id/usb-Klipper_sam4e8e_0031385338484A323134303537303330-if00
 [mcu rpi]
 serial: /tmp/klipper_host_mcu
 
@@ -17,28 +17,57 @@ serial: /tmp/klipper_host_mcu
 # 4. Select what features you would like. The sections with a # at the end are a mandatory choice of one out of the group
 
 
-#[include components/webui_macros300.cfg]   #choose your bed size and comment out the other    #####
+[include components/webui_macros300.cfg]   #choose your bed size and comment out the other    #####
 #[include components/webui_macros400.cfg]                                                      
 
 [include components/300.cfg]  #choose your bed size and comment out the other      ######
 #[include components/400.cfg] 
-[include components/300a3dp,omc,optendstops.cfg]
+#[include components/300a3dp,omc,optendstops.cfg]
 
-#[include components/ddestockthermistor]                                                        ######
-#[include components/ddedyzethermistor]
-#[include components/ddetoolboardstockthermistor]
-[include components/ddetoolboarddyzethermistor]
+    
+[include components/ddestockthermistor]    #slice300c or stock                      ######
+#[include components/ddedyzethermistor]    
+#[include components/ddetoolboardstockthermistor]  #slice300c or stock
+#[include components/ddetoolboarddyzethermistor]
 
 
-[include components/fansandleds.cfg]                                               #####
+#[include components/fansandleds.cfg]                                                #####
+[include components/fansandledschamber.cfg] 
 
-#[include components/filamentrunout.cfg]
-
-[include components/inputshaper.cfg]
+[include components/filamentrunout.cfg]
 
 [include components/timelapse.cfg]
 
 
+
+
+
+
+
+
+
+[adxl345]
+cs_pin: rpi:None
+#spi_speed:2500000 #if connection dropouts try enable
+[resonance_tester]
+accel_chip: adxl345
+probe_points:
+  200,50,10  # an example
+
+#[adxl345] #experimental board working on 
+#cs_pin: head0:PB10
+#spi_software_sclk_pin: head0:PA13
+#spi_software_mosi_pin: head0:PA14
+#spi_software_miso_pin: head0:PB11
+#axes_map: -z,x,-y
+
+[force_move]
+enable_force_move: True
+[input_shaper]
+shaper_type_x = mzv
+shaper_freq_x = 76.8
+shaper_type_y = mzv
+shaper_freq_y = 47.0
 #*# <---------------------- SAVE_CONFIG ---------------------->
 #*# DO NOT EDIT THIS BLOCK OR BELOW. The contents are auto-generated.
 #*#
