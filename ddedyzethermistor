@@ -19,7 +19,7 @@ max_extrude_only_distance: 151.0
 cs_pin: PC17
 spi_bus: usart1
 interpolate: True
-run_current: .36
+run_current: .33
 idle_current_percent: 30
 sense_resistor: 0.051
 driver_TBL: 2
