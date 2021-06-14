@@ -25,3 +25,10 @@ stealthchop_threshold: 0
 driver_HEND: 3
 driver_HSTRT: 2
 driver_TOFF: 3
+
+
+[heater_fan hotend]
+pin: head0:PA8   # "FAN1"
+heater: extruder
+heater_temp: 50.0
+
