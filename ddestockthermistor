@@ -28,3 +28,10 @@ driver_HDEC: 1
 driver_HEND: 3
 driver_HSTRT: 5
 driver_TOFF: 6
+
+
+[fan]
+pin: PC23
+off_below:.3
+cycle_time:.008
+#hardware_pwm: True
