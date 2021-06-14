@@ -30,3 +30,8 @@ driver_HSTRT: 5
 driver_TOFF: 6
 
 
+[heater_fan hotend]
+pin: PC26
+heater: extruder
+heater_temp: 45
+fan_speed: 1
