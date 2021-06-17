@@ -13,7 +13,7 @@ heater_pin: !PA20
 sensor_type: EPCOS 100K B57560G104F
 sensor_pin: PC15
 control : pid
-min_temp: -50
+min_temp: 0
 max_temp: 450
 max_extrude_only_distance: 151.0
 [tmc2660 extruder]
