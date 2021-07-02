@@ -11,7 +11,7 @@ filament_diameter: 1.750
 heater_pin: !PA20
 sensor_type: dyze500
 sensor_pin: PC15
-control : pid
+smooth_time: .1
 min_temp: -50
 max_temp: 450
 max_extrude_only_distance: 151.0
