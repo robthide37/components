@@ -11,6 +11,7 @@ filament_diameter: 1.750
 sensor_type: EPCOS 100K B57560G104F
 sensor_pin: head0:PA0 # "THERMISTOR"
 pullup_resistor: 2200 # The board uses a 2.2k ohm pullup to work with a PT1000 
+smooth_time: .1
 min_temp: 0
 max_temp: 450
 max_extrude_only_distance: 151.0
