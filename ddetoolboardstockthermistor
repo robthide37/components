@@ -26,7 +26,7 @@ stealthchop_threshold: 0
 driver_HEND: 3
 driver_HSTRT: 2
 driver_TOFF: 3
-pressure_advance : .034
+pressure_advance :.034
 smooth_time :01
 
 
