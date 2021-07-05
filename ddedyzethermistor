@@ -27,6 +27,9 @@ driver_HDEC: 1
 driver_HEND: 3
 driver_HSTRT: 5
 driver_TOFF: 6
+pressure_advance : .034
+smooth_time :01
+
 
 
 [heater_fan hotend]
