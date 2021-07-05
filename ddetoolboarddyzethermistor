@@ -15,6 +15,8 @@ smooth_time: .1
 min_temp: 0
 max_temp: 450
 max_extrude_only_distance: 151.0
+pressure_advance : .034
+smooth_time :01
 [tmc2209 extruder]
 uart_pin: head0:PA10
 tx_pin: head0:PA9
@@ -26,8 +28,6 @@ stealthchop_threshold: 0
 driver_HEND: 3
 driver_HSTRT: 2
 driver_TOFF: 3
-pressure_advance : .034
-smooth_time :01
 
 
 
