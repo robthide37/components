@@ -29,7 +29,7 @@ serial: /tmp/klipper_host_mcu
 #[include components/ddedyzethermistor]    
 #[include components/ddetoolboardstockthermistor]  #slice300c or stock
 #[include components/ddetoolboarddyzethermistor]
-
+#[include components/ddeslice450thermistor]
 
 #[include components/fansandleds.cfg]                                                #####
 [include components/fansandledschamber.cfg] 
