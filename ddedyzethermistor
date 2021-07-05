@@ -15,7 +15,7 @@ smooth_time: .1
 min_temp: -50
 max_temp: 450
 max_extrude_only_distance: 151.0
-pressure_advance : .034
+pressure_advance :.034
 smooth_time :.01
 [tmc2660 extruder]
 cs_pin: PC17
