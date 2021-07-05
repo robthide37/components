@@ -16,7 +16,7 @@ min_temp: 0
 max_temp: 450
 max_extrude_only_distance: 151.0
 pressure_advance : .034
-smooth_time :.01
+pressure_advance_smooth_time: .01
 [tmc2209 extruder]
 uart_pin: head0:PA10
 tx_pin: head0:PA9
