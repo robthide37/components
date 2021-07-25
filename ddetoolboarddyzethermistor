@@ -40,4 +40,15 @@ pin: head0:PA8   # "FAN1"
 heater: extruder
 heater_temp: 50.0
 
-
+[thermistor dyze500]
+temperature1 : 25
+resistance1 : 4500000
+temperature2 : 200
+resistance2 : 8070
+temperature3 : 400
+resistance3 : 253
+[verify_heater extruder]
+max_error: 180
+#check_gain_time:
+hysteresis: 6
+#heating_gain: 2
