@@ -1,0 +1,54 @@
+# klipper board use this 
+[verify_heater extruder]
+max_error: 180
+
+#check_gain_time:
+hysteresis: 8
+#heating_gain: 2
+
+[extruder]
+step_pin: head0:PB3
+dir_pin: head0:PB4
+enable_pin: !head0:PB6
+heater_pin: head0:PA6  # "HEAT"
+rotation_distance :4.6715
+microsteps: 16
+nozzle_diameter: 0.800
+filament_diameter: 1.750
+sensor_type: pt1000
+sensor_pin: head0:PA0 # "THERMISTOR"
+pullup_resistor: 2200 # The board uses a 2.2k ohm pullup to work with a PT1000 
+min_temp: 0
+max_temp: 450
+max_extrude_only_distance: 151.0
+pressure_advance : .034
+pressure_advance_smooth_time: .02
+[tmc2209 extruder]
+uart_pin: head0:PA10
+tx_pin: head0:PA9
+interpolate: True
+run_current: 0.35
+sense_resistor: 0.110
+hold_current: 0.15
+stealthchop_threshold: 0
+driver_HEND: 3
+driver_HSTRT: 2
+driver_TOFF: 3
+
+[heater_fan hotendtool]
+pin: head0:PA8   # "FAN1"
+heater: extruder
+heater_temp: 50.0
+
+[thermistor dyze500]
+temperature1 : 25
+resistance1 : 4500000
+temperature2 : 200
+resistance2 : 8070
+temperature3 : 400
+resistance3 : 253
+[verify_heater extruder]
+max_error: 180
+#check_gain_time:
+hysteresis: 6
+#heating_gain: 2
