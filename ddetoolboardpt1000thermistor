@@ -15,7 +15,7 @@ rotation_distance :4.6715
 microsteps: 16
 nozzle_diameter: 0.800
 filament_diameter: 1.750
-sensor_type: pt1000
+sensor_type: PT1000
 sensor_pin: head0:PA0 # "THERMISTOR"
 pullup_resistor: 2200 # The board uses a 2.2k ohm pullup to work with a PT1000 
 min_temp: 0
