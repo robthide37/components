@@ -1,10 +1,4 @@
 # klipper board use this 
-[verify_heater extruder]
-max_error: 180
-
-#check_gain_time:
-hysteresis: 8
-#heating_gain: 2
 
 [extruder]
 step_pin: head0:PB3
@@ -47,8 +41,8 @@ temperature2 : 200
 resistance2 : 8070
 temperature3 : 400
 resistance3 : 253
-[verify_heater extruder]
-max_error: 180
+#[verify_heater extruder]
+#max_error: 180
 #check_gain_time:
-hysteresis: 6
+#hysteresis: 6
 #heating_gain: 2
