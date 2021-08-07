@@ -1,10 +1,4 @@
 # klipper board use this 
-[verify_heater extruder]
-max_error: 180
-
-#check_gain_time:
-hysteresis: 8
-#heating_gain: 2
 
 [extruder]
 step_pin: head0:PB3
@@ -22,12 +16,12 @@ min_temp: 0
 max_temp: 450
 max_extrude_only_distance: 151.0
 pressure_advance : .034
-pressure_advance_smooth_time: .01
+pressure_advance_smooth_time: .02
 [tmc2209 extruder]
 uart_pin: head0:PA10
 tx_pin: head0:PA9
 interpolate: True
-run_current: 0.35
+run_current: 0.36
 sense_resistor: 0.110
 hold_current: 0.15
 stealthchop_threshold: 0
@@ -47,8 +41,8 @@ temperature2 : 200
 resistance2 : 8070
 temperature3 : 400
 resistance3 : 253
-[verify_heater extruder]
-max_error: 180
+#[verify_heater extruder]
+#max_error: 180
 #check_gain_time:
-hysteresis: 6
+#hysteresis: 6
 #heating_gain: 2
