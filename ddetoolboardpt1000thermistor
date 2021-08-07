@@ -21,7 +21,7 @@ pressure_advance_smooth_time: .02
 uart_pin: head0:PA10
 tx_pin: head0:PA9
 interpolate: True
-run_current: 0.35
+run_current: 0.36
 sense_resistor: 0.110
 hold_current: 0.15
 stealthchop_threshold: 0
