@@ -25,10 +25,12 @@ serial: /tmp/klipper_host_mcu
 #[include components/300a3dp,omc,optendstops.cfg]
 
     
-[include components/ddestockthermistor]    #slice300c or stock                      ######
+#[include components/ddestockthermistor]    #slice300c or stock                      ######
 #[include components/ddedyzethermistor]    
 #[include components/ddetoolboardstockthermistor]  #slice300c or stock
 #[include components/ddetoolboarddyzethermistor]
+#[include components/ddetoolboardpt1000thermistor]
+[include components/ddept1000thermistor]
 #[include components/ddeslice450thermistor]
 
 #[include components/fansandleds.cfg]                                                #####
