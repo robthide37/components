@@ -13,7 +13,7 @@ heater_pin: !PA20
 sensor_type: PT1000
 sensor_pin: PC15 # "THERMISTOR"
 pullup_resistor: 2200 # The board uses a 2.2k ohm pullup to work with a PT1000 
-min_temp: 0
+min_temp: -50
 max_temp: 450
 max_extrude_only_distance: 151.0
 pressure_advance : .034
