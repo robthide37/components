@@ -30,10 +30,12 @@ driver_HDEC: 1
 driver_HEND: 3
 driver_HSTRT: 5
 driver_TOFF: 6
-[heater_fan hotendtool]
-pin: head0:PA8   # "FAN1"
+[heater_fan hotend]
+pin: PC26
 heater: extruder
-heater_temp: 50.0
+heater_temp: 45
+fan_speed: 1
+
 
 [thermistor dyze500]
 temperature1 : 25
