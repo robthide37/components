@@ -1,0 +1,95 @@
+Ldo 60mm 42-sth60-2004mac(rc) Standard temp
+Holding torque .6kg-cm (6 Nm)
+Holding torque 84.96 oz inch
+Resistance 1.4 =-15%
+Inductance 3 mh/phase "enter as .003 in the TMC calculator"
+Rated current 2 Amp
+Detent torque .3 mn-m
+Weight .5KG
+Step angle .9
+Rotor inertia 120 g.cm
+Class b insulation aka 130c
+Insulation resistance 100 Mohm (DC 500V)
+
+Ldo 60mm 42sth60-2004mah High temp
+Holding torque 6kg-cm
+Holding torque 84.96 oz inch
+Resistance 1.4 =- 20%
+Inductance 3 mh/phase =- 20 % .003 in Tmc calculator
+Rated current 2 Amp
+Detent torque .3 mn-m
+Weight .5KG
+Step angle .9
+Rotor inertia 120 g.cm
+Class h insulation aka 180c
+Insulation resistance 100 Mohm (DC 500V)
+
+Moons 48mm .9 degreeMS17HA6P4200 
+
+Phase		2
+Step Angle		0.9°
+Shaft		Single
+Frame Size		NEMA17(42mm)
+Length	mm	48.3
+Rated Current		2 Amp
+Holding Torque	Nm	0.53
+Holding Torque	oz-in	75.06
+Resistance	Ohms ±10%@20℃	1.31
+Inductance	mH Typ.	4
+Coil Type		Bi-Polar
+Detent Torque	mNm	25
+Rotor Inertia	gcm²	82
+Front Shaft Length	mm	24
+Front Shaft Diameter	mm	5
+Terminal Number		4
+Connect		Plug
+Insulation Class		B(130°C)
+Approvals		RoHS
+IP Rating		IP40
+Weight	kg	0.351
+
+Moons 60mm 1.8 degree MS17HDBP4200 
+Phase		2
+Step Angle		1.8°
+Shaft		Single
+Frame Size		NEMA17(42mm)
+Length	mm	62.8
+Rated Current	2 Amp
+Holding Torque	Nm	0.83
+Holding Torque	oz-in	117.54
+Resistance	Ohms ±10%@20℃	1.49
+Inductance	mH Typ.	3.8
+Coil Type		Bi-Polar
+Detent Torque	mNm	30
+Rotor Inertia	gcm²	123
+Front Shaft Length	mm	24
+Front Shaft Diameter	mm	5
+Terminal Number		4
+Connect		Plug
+Insulation Class		B(130°C)
+Approvals		UL,RoHS
+IP Rating		IP40
+Weight	kg	0.6
+
+Ldo nema 14 EXTRUDER HT 20mm 1amp
+1.8 deg step
+Phase resistance 2.1 =- 10%
+Rated voltage 2.1v
+Phase inducrtance 1.6 =-20%
+weight 85g
+Temp rating 180c
+
+
+Moons nema 14 extruder
+step angle 1.8
+rated voltage 1.9v
+phase resistance 1.9 ohm =-10%
+weight 85g
+phase inductance 1.41 mh =-20%
+Rated current 1 amp
+Temp rating 130c
+
+
+
+
+
