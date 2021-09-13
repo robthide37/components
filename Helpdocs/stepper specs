@@ -11,6 +11,7 @@ Rotor inertia 120 g.cm
 Class b insulation aka 130c
 Insulation resistance 100 Mohm (DC 500V)
 
+
 Ldo 60mm 42sth60-2004mah High temp
 Holding torque 6kg-cm
 Holding torque 84.96 oz inch
@@ -24,8 +25,8 @@ Rotor inertia 120 g.cm
 Class h insulation aka 180c
 Insulation resistance 100 Mohm (DC 500V)
 
-Moons 48mm .9 degreeMS17HA6P4200 
 
+Moons 48mm .9 degreeMS17HA6P4200 
 Phase		2
 Step Angle		0.9°
 Shaft		Single
@@ -47,6 +48,7 @@ Insulation Class		B(130°C)
 Approvals		RoHS
 IP Rating		IP40
 Weight	kg	0.351
+
 
 Moons 60mm 1.8 degree MS17HDBP4200 
 Phase		2
@@ -71,25 +73,54 @@ Approvals		UL,RoHS
 IP Rating		IP40
 Weight	kg	0.6
 
+
 Ldo nema 14 EXTRUDER HT 20mm 1amp
 1.8 deg step
-Phase resistance 2.1 =- 10%
+Phase resistance 2.1 +- 10%
 Rated voltage 2.1v
-Phase inducrtance 1.6 =-20%
+Phase inducrtance 1.6 +-20%
 weight 85g
 Temp rating 180c
+---------------------------------------------------------------------------------------
+Ldo nema 14 EXTRUDER HT 17mm 1 amp
+step angle 1.8
+rated voltage 10v
+inductance 6MH .006 in spreadsheet
+rated current per phase 1 amp
+resistance 10 ohms
 
+[tmc2209 extruder]
+uart_pin: head0:PA10
+tx_pin: head0:PA9
+interpolate: True
+run_current: 0.368
+sense_resistor: 0.110
+hold_current: 0.2
+stealthchop_threshold: 0
+driver_TBL: 0
+driver_HEND: 3
+driver_HSTRT: 2
+driver_TOFF: 4
 
-Moons nema 14 extruder
+----------------------------------------------------------------------------------------
+Moons nema 14 extruder 1 amp
 step angle 1.8
 rated voltage 1.9v
-phase resistance 1.9 ohm =-10%
+phase resistance 1.9 ohm +-10%
 weight 85g
-phase inductance 1.41 mh =-20%
+phase inductance 1.41 mh +-20%
 Rated current 1 amp
 Temp rating 130c
 
-
-
-
-
+[tmc2209 extruder]
+uart_pin: head0:PA10
+tx_pin: head0:PA9
+interpolate: True
+run_current: 0.643
+sense_resistor: 0.110
+hold_current: 0.2
+stealthchop_threshold: 0
+driver_TBL: 0
+driver_HEND: 4
+driver_HSTRT: 7
+driver_TOFF: 3
