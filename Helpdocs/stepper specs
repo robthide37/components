@@ -84,6 +84,21 @@ Rated voltage 2.1v
 Phase inducrtance 1.6 +-20%
 weight 85g
 Temp rating 180c
+2209 values
+run_current: 0.58
+sense_resistor: 0.110
+hold_current: 0.2
+stealthchop_threshold: 0
+driver_TBL: 0
+driver_HEND: 6
+driver_HSTRT: 7
+driver_TOFF: 4
+          2660 values
+run_current: 0.58
+driver_TBL: 0
+driver_HEND: 3
+driver_HSTRT: 5
+driver_TOFF: 4
 ---------------------------------------------------------------------------------------
 Ldo nema 14 EXTRUDER HT 17mm 1 amp
 step angle 1.8
@@ -104,7 +119,12 @@ driver_TBL: 0
 driver_HEND: 3
 driver_HSTRT: 2
 driver_TOFF: 4
-
+       2660 values
+run_current: 0.34
+driver_TBL: 0
+driver_HEND: 3
+driver_HSTRT: 3
+driver_TOFF: 5
 ----------------------------------------------------------------------------------------
 Moons nema 14 extruder 1 amp
 step angle 1.8
@@ -127,3 +147,10 @@ driver_TBL: 0
 driver_HEND: 4
 driver_HSTRT: 7
 driver_TOFF: 3
+
+       2660 values
+run_current: 0.635
+driver_TBL: 0
+driver_HEND: 3
+driver_HSTRT: 6
+driver_TOFF: 4
