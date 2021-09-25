@@ -27,7 +27,7 @@ hold_current: 0.05
 stealthchop_threshold: 0
 driver_TBL: 0
 driver_HEND: 3
-driver_HSTRT: 2
+driver_HSTRT: 7
 driver_TOFF: 4
 
 [heater_fan hotendtool]
