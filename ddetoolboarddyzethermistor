@@ -25,9 +25,9 @@ run_current: 0.36
 sense_resistor: 0.110
 hold_current: 0.05
 stealthchop_threshold: 0
-driver_TBL: 0
-driver_HEND: 3
-driver_HSTRT: 7
+driver_TBL: 2
+driver_HEND: 2
+driver_HSTRT: 0
 driver_TOFF: 4
 
 [heater_fan hotendtool]
