@@ -23,7 +23,7 @@ tx_pin: head0:PA9
 interpolate: True
 run_current: 0.36
 sense_resistor: 0.110
-hold_current: 0.15
+hold_current: 0.05
 stealthchop_threshold: 0
 driver_TBL: 0
 driver_HEND: 3
