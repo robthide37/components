@@ -76,6 +76,28 @@ Approvals		UL,RoHS
 IP Rating		IP40
 Weight	kg	0.6
 
+Moons 48mm 1.8 degree hdp6p4200
+Phase		2
+Step Angle		1.8°
+Shaft		Single
+Frame Size		NEMA17(42mm)
+Length	mm	48.3
+Rated Current	A	2
+Holding Torque	Nm	0.63
+Holding Torque	oz-in	89.22
+Resistance	Ohms ±10%@20℃	1.3
+Inductance	mH Typ.	2.9
+Coil Type		Bi-Polar
+Detent Torque	mNm	25
+Rotor Inertia	gcm²	82
+Front Shaft Length	mm	24
+Front Shaft Diameter	mm	5
+Terminal Number		4
+Connect		Plug
+Insulation Class		B(130°C)
+Approvals		UL,RoHS
+IP Rating		IP40
+Weight	kg	0.36
 
 Ldo nema 14 EXTRUDER HT 20mm 1amp
 1.8 deg step
