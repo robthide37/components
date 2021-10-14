@@ -1,5 +1,55 @@
 # klipper board use this 
 
+[extruder]
+step_pin: PD5
+dir_pin: PA1 #remove ! to reverse direction
+enable_pin: !PC6
+#step_distance: .00145985
+microsteps: 16
+rotation_distance :7.619
+nozzle_diameter: 0.800
+filament_diameter: 1.750
+heater_pin: !PA20
+sensor_type:MAX31865
+sensor_pin:cs1
+#   The chip select line for the sensor chip. This parameter must be
+#   provided.
+#spi_speed: 4000000
+#   The SPI speed (in hz) to use when communicating with the chip.
+#   The default is 4000000.
+#spi_bus:
+#tc_type: K
+#tc_use_50Hz_filter: False
+#tc_averaging_count: 1
+#   The above parameters control the sensor parameters of MAX31856
+#   chips. The defaults for each parameter are next to the parameter
+#   name in the above list.
+#rtd_nominal_r: 100
+#rtd_reference_r: 430
+#rtd_num_of_wires: 2
+#rtd_use_50Hz_filter: False
+min_temp: -50
+max_temp: 450
+max_extrude_only_distance: 151.0
+pressure_advance : .034
+pressure_advance_smooth_time: .02
+[tmc2660 extruder]
+cs_pin: PC17
+spi_bus: usart1
+interpolate: True
+run_current: .7
+idle_current_percent: 30
+sense_resistor: 0.051
+driver_TBL: 2
+#driver_HDEC: 1
+driver_HEND: 3
+driver_HSTRT: 0
+driver_TOFF: 4
+[heater_fan hotend]
+pin: PC26
+heater: extruder
+heater_temp: 45
+fan_speed: 1
 
 #On drive E1
 [extruder1]
