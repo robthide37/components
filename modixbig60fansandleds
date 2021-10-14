@@ -1,6 +1,6 @@
 #RPI TEMP
-[temperature_sensor rpi]
-sensor_type: rpi_temperature
+#[temperature_sensor rpi]
+#sensor_type: rpi_temperature
 # Fan1
 [fan]
 pin: PC26
