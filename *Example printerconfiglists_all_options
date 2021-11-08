@@ -26,6 +26,7 @@ serial: /tmp/klipper_host_mcu
 
     
 #[include components/ddestockthermistor]    #slice300c or stock                      ######
+#[include components/ddept1000thermistorreverse.cfg]
 #[include components/ddedyzethermistor]    
 #[include components/ddetoolboardstockthermistor]  #slice300c or stock
 #[include components/ddetoolboarddyzethermistor]
