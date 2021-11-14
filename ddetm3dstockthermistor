@@ -26,12 +26,11 @@ interpolate: True
 run_current: .35
 idle_current_percent: 30
 sense_resistor: 0.051
-driver_TBL: 2
-driver_HDEC: 1
+driver_TBL: 1
+#driver_HDEC: 1
 driver_HEND: 3
-driver_HSTRT: 5
-driver_TOFF: 6
-
+driver_HSTRT: 3
+driver_TOFF: 4
 
 
 
