@@ -1,0 +1,3 @@
+[extruder]
+sensor_type: NTC 100K beta 3950
+sensor_pin: PC15
