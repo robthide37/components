@@ -166,7 +166,7 @@ hold_current: 0.2
 stealthchop_threshold: 0
 driver_TBL: 0
 driver_HEND: 3
-driver_HSTRT: 2
+driver_HSTRT: 1
 driver_TOFF: 4
        2660 values
 run_current: 0.34
