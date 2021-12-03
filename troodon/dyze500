@@ -1,0 +1,11 @@
+[thermistor dyze500]
+temperature1 : 25
+resistance1 : 4500000
+temperature2 : 200
+resistance2 : 8070
+temperature3 : 400
+resistance3 : 253
+
+[extruder]
+sensor_type: dyze500
+sensor_pin: PC15
