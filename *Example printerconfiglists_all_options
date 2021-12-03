@@ -16,38 +16,69 @@ serial: /tmp/klipper_host_mcu
  
 # 4. Select what features you would like. The sections with a # at the end are a mandatory choice of one out of the group
 
-
+###### MACROS
 [include components/webui_macros300.cfg]   #choose your bed size and comment out the other    #####
 #[include components/webui_macros400.cfg]                                                      
 
-[include components/300.cfg]  #choose your bed size and comment out the other      ######
-#[include components/400.cfg] 
-#[include components/300a3dp,omc,optendstops.cfg]
 
-    
-#[include components/ddestockthermistor]    #slice300c or stock                      ######
-#[include components/ddept1000thermistorreverse.cfg]
-#[include components/ddedyzethermistor]    
-#[include components/ddetoolboardstockthermistor]  #slice300c or stock
-#[include components/ddetoolboarddyzethermistor]
-#[include components/ddetoolboardpt1000thermistor]
-[include components/ddept1000thermistor]
-#[include components/ddeslice450thermistor]
+###### FRAME AND BED
+[include components/troodon/300.cfg]  #choose your bed and setup if modded size and comment out the other      ######
+#[include components/troodon/300a3dp,optendstops]
+#[include components/troodon/300a3dpmod.cfg.cfg]
+#[include components/troodon/300a3dp,omc,optendstops.cfg]
+#[include components/troodon/400.cfg]
+#[include components/troodon/400Tm3dmod.cfg]
+#[include components/troodon/400a3dpmod.cfg]
 
-#[include components/fansandleds.cfg]                                                #####
-[include components/fansandledschamber.cfg] 
 
+###### EXTRUDER MOTOR
+[include components/troodon/ddestock0504motor.cfg]###LDO Newer frmbot kit up until fall 2021
+#[include components/troodon/ddestock100417mm.cfg]####LDO Original up until winter 2020
+
+
+###### THERMISTOR
+#[include components/troodon/slice450.cfg]
+[include components/troodon/stockthermistor.cfg]
+#[include components/troodon/pt1000.cfg]
+#[include components/troodon/dyze500.cfg]
+
+
+####### FANS AND LEDS
+#[include components/troodon/quietfansandledschamber.cfg]
+[include components/troodon/fansandleds.cfg]  
+#[include components/troodon/fansandledschamber.cfg] 
+
+
+#######Bed MESH
+[include components/troodon/standardmesh300.cfg]
+#[include components/troodon/standarmesh400.cfg]
+#[include components/highresmesh300.cfg]
+#[include components/highresmesh400.cfg]
+
+
+####### RUNOUT SENSOR
 [include components/filamentrunout.cfg]
 
+
+####### TIMELAPSE
 [include components/timelapse.cfg]
 
 
 
 
 
-
-
-
+####### INPUT SHAPING do not edit use SHAPER_CALIBRATE in console with acceleromter to set 
+[adxl345]
+cs_pin: rpi:None
+spi_speed:2500000
+[resonance_tester]
+accel_chip: adxl345
+probe_points:
+  100,25,40  # an example
+ [input_shaper]
+#shaper_type: mzv
+#shaper_freq_x:32.2
+#shaper_freq_y:38.4
 
 [adxl345]
 cs_pin: rpi:None
