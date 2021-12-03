@@ -34,6 +34,7 @@ serial: /tmp/klipper_host_mcu
 ###### EXTRUDER MOTOR
 [include components/troodon/ddestock0504motor.cfg]###LDO Newer frmbot kit up until fall 2021
 #[include components/troodon/ddestock100417mm.cfg]####LDO Original up until winter 2020
+#[include components/troodon/ddestock100420mm.cfg]####LDO newest orbiter kit unless moons
 
 
 ###### THERMISTOR
