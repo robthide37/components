@@ -63,7 +63,7 @@ serial: /tmp/klipper_host_mcu
 
 ####### TIMELAPSE
 [include components/timelapse.cfg]
-
+#[include timelapse.cfg] ###if mainsail version shows timelapse on shortcuts aka 2.1b3 or newer than use this and comment out the one above
 
 
 
