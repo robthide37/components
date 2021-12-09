@@ -1,9 +1,12 @@
 [mcu]
-serial: /dev/serial/by-id/usb-Klipper_sam4e8e_00323053354B50483031303639303432-if00
+serial: /dev/serial/by-id/usb-Klipper_sam4e8e_00313953325753543039303239303333-if00
 [mcu rpi]
 serial: /tmp/klipper_host_mcu
 [sx1509 duex]
 i2c_address: 62 # Address is fixed on duex boards
+
+#[include mainsail.cfg]
+
 
 
 # 3. If using a toolboard with canbus then uncomment the section below and use the uuid for canbus or the serial for usb connection. "it helps to identify which board is which  by unplugging the other mcu if using multiple usb connections"
@@ -14,11 +17,17 @@ i2c_address: 62 # Address is fixed on duex boards
  
 # 4. Select what features you would like. The sections with a # above are a mandatory choice of one out of the group
 
-##### Bed size
 
+#######MACROS
 #[include components/webui_macros300.cfg]   #choose your bed size and comment out the other    
 #[include components/webui_macros400.cfg]                                                      
-[include components/Modix/1000.cfg]
+#[include components/Modix/1000.cfg]
+[include components/Modix/macros600.cfg]
+
+##### Bed size
+
+[include components/Modix/600quadzdrivers.cfg]
+
 
 ###### Macro pack
 #[include components/300.cfg]  #choose your bed size and comment out the other      
@@ -26,25 +35,44 @@ i2c_address: 62 # Address is fixed on duex boards
 #[include components/300a3dp,omc,optendstops.cfg]
 #[include components/Modix/macros600.cfg]
 [include components/Modix/macros1000.cfg]
+
+
+
 ######  Extruder type   If you would like to do a custom pid tune you can run the script and then manually enter the values under extruder at the bottom of this file but i do not recommend changing from the values here as i made them by iterating manually 
 ######  vs using an auto calibration script so the test users have had rock solid temps that don't overshoot and stay within .1 of target
+
+
+
 #Extruder 0
 [include components/Modix/e0bmg104gt.cfg]
 #[include components/Modix/e0bmgpt100.cfg]
 
 
+
+#####Change extruder direction
+[include components/Modix/e0reverseextruder.cfg]
+
+
 #Extruder 1 if want enabled
-[include components/Modix/e1bmg104gt.cfg]
+#[include components/Modix/e1bmg104gt-james.cfg]
 #[include components/Modix/e1bmgpt100.cfg]
+
+
+
+
+
 
 ###### Fan setup
 #[include components/fansandleds.cfg]                                                
 #[include components/fansandledschamber.cfg] #If you have a chamber sensor this will enable it to control the exhaust fan 
-[include components/Modix/fans1000.cfg]
-#[include components/Modix/fans600.cfg]
+#[include components/Modix/fans1000.cfg]
+[include components/Modix/fans600.cfg]
 
-[include components/Modix/e0filamentsensor.cfg]   #turns runout sensor on 
-[include components/Modix/e1filamentsensor.cfg]
+
+
+#####Filamentsensor
+#[include components/Modix/e0filamentsensor.cfg]   #turns runout sensor on 
+#[include components/Modix/e1filamentsensor.cfg]
 
 
 
@@ -53,7 +81,7 @@ i2c_address: 62 # Address is fixed on duex boards
 
 
 
-
+[include components/Modix/highresmesh.cfg]
 
 
 
