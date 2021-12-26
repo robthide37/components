@@ -52,7 +52,7 @@ serial: /tmp/klipper_host_mcu
 
 #######Bed MESH
 [include components/troodon/standardmesh300.cfg]
-#[include components/troodon/standarmesh400.cfg]
+#[include components/troodon/standardmesh400.cfg]
 #[include components/troodon/highresmesh300.cfg]
 #[include components/troodon/highresmesh400.cfg]
 
