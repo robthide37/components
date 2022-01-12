@@ -188,7 +188,7 @@ Temp rating 130c
 uart_pin: head0:PA10
 tx_pin: head0:PA9
 interpolate: True
-run_current: 0.76
+run_current: 0.7
 sense_resistor: 0.110
 hold_current: 0.2
 stealthchop_threshold: 0
@@ -208,7 +208,7 @@ driver_HSTRT: 7
 driver_TOFF: 3
 
        2660 values
-run_current: 0.76
+run_current: 0.7
 driver_TBL: 1
 driver_HEND: 3
 driver_HSTRT: 7
