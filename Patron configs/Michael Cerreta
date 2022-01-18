@@ -2,7 +2,7 @@
 # 1. find you mcu id or pull from a previous printer.cfg. you can use the ls /dev/serial/by-id/* command to get it. 
 # 2. Enter the mcu id on the line below this replacing the example serial
 [mcu]
-serial: /dev/serial/by-id/usb-Klipper_sam4e8e_0031385338484A323134303537303330-if00
+serial: /dev/serial/by-id/usb-Klipper_sam4e8e_00313953324A46533037303336303331-if00
 [mcu rpi]
 serial: /tmp/klipper_host_mcu
 
@@ -23,7 +23,7 @@ serial: /tmp/klipper_host_mcu
 
 ###### FRAME AND BED
 #[include components/troodon/300.cfg]  #choose your bed and setup if modded size and comment out the other      ######
-[include components/troodon/300a3dp,optendstops]
+[include components/troodon/300a3dp,moons,optendstops]
 #[include components/troodon/300a3dpmod.cfg.cfg]
 #[include components/troodon/300a3dp,omc,optendstops.cfg]
 #[include components/troodon/400.cfg]
