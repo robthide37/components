@@ -8,7 +8,7 @@ rotation_distance :4.6715
 microsteps: 16
 nozzle_diameter: 0.800 # is only a limit leave at teh largest size nozzle you use 
 filament_diameter: 1.750
-sensor_type: EPCOS 100K B57560G104F
+sensor_type: Generic 3950
 sensor_pin: head0:PA0 # "THERMISTOR"
 pullup_resistor: 2200 # The board uses a 2.2k ohm pullup to work with a PT1000 
 smooth_time: .1
