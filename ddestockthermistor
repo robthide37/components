@@ -6,7 +6,7 @@ enable_pin: !PC6
 #step_distance: .00145985
 microsteps: 16
 rotation_distance :4.6715
-nozzle_diameter: 0.800
+nozzle_diameter: 1.200
 filament_diameter: 1.750
 heater_pin: !PA20
 #sensor_type: dyze500
