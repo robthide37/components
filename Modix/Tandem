@@ -1,0 +1,19 @@
+[extruder_stepper tandem]
+
+extruder: extruder
+#   The extruder this stepper is synchronized to. If this is set to an
+#   empty string then the stepper will not be synchronized to an
+#   extruder. The default is "extruder".
+step_pin: PD4
+dir_pin: !PD9
+enable_pin: !PC6
+
+rotation_distance: 7.619#7.83
+microsteps: 16
+[tmc2260 extruder_stepper tandem]
+[tmc2660 extruder1]
+cs_pin: PC25
+spi_bus: usart1
+interpolate: True
+run_current: .700
+sense_resistor: 0.051
