@@ -188,7 +188,7 @@ Temp rating 130c
 uart_pin: head0:PA10
 tx_pin: head0:PA9
 interpolate: True
-run_current: 0.7
+run_current: 0.58
 sense_resistor: 0.110
 hold_current: 0.2
 stealthchop_threshold: 0
@@ -212,4 +212,19 @@ run_current: 0.7
 driver_TBL: 1
 driver_HEND: 3
 driver_HSTRT: 7
+driver_TOFF: 4
+
+------------------------------------------------------------
+LGX 25mm stepper
+Toolboard settings
+[tmc2209 extruder]
+uart_pin: head0:PA10
+tx_pin: head0:PA9
+interpolate: False
+run_current: 0.552
+sense_resistor: 0.110
+stealthchop_threshold: 0
+driver_TBL: 2
+driver_HEND: 2
+driver_HSTRT: 0
 driver_TOFF: 4
