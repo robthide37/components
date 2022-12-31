@@ -221,10 +221,10 @@ Toolboard settings
 uart_pin: head0:PA10
 tx_pin: head0:PA9
 interpolate: False
-run_current: 0.552
+run_current: 0.636   # if want run 10mms linear need .636 if want stay below 20mm3 than .552 sould be ok ,can reduce hend to 2
 sense_resistor: 0.110
 stealthchop_threshold: 0
 driver_TBL: 2
-driver_HEND: 2
+driver_HEND: 3
 driver_HSTRT: 0
 driver_TOFF: 4
