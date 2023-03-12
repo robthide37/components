@@ -10,7 +10,7 @@ nozzle_diameter: 1.200
 filament_diameter: 1.750
 heater_pin: !PA20
 #sensor_type: dyze500
-sensor_type: Generic
+sensor_type: Generic 3950
 sensor_pin: PC15
 #control : pid
 smooth_time: .1
